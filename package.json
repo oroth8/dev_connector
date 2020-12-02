@@ -1,0 +1,22 @@
+{
+  "name": "dev_connector",
+  "version": "1.0.0",
+  "description": "A MERN stack social media application to connect you to developers. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oroth8/dev_connector.git"
+  },
+  "keywords": [
+    "MERN"
+  ],
+  "author": "Owen Roth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oroth8/dev_connector/issues"
+  },
+  "homepage": "https://github.com/oroth8/dev_connector#readme"
+}
