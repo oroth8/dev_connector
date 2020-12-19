@@ -1,5 +1,6 @@
 # Logs
 default.json
+production.json
 logs
 *.log
 npm-debug.log*
