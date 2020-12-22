@@ -31,7 +31,7 @@ const NavBar = ({
     </li>
     <li>
       <a onClick={logout}
-        href="!#">
+        href="#!">
         <i className='fas fa-sign-out-alt'></i>
         {" "}
         <span className="hide-sm">Logout</span>
