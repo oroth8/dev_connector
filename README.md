@@ -1,4 +1,4 @@
-![DevConnectorScreenShot](.\client\src\img\DevConnector.png)
+![DevConnectorScreenShot](./client/src/img/DevConnector.png)
 
 # Dev Connector
 
