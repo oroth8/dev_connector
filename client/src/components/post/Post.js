@@ -11,6 +11,7 @@ import CommentItem from './CommentItem';
 const Post = ({ getPost, post: { post, loading }, match }) => {
     useEffect(() => {
         getPost(match.params.id)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [getPost])
     return loading || post === null ? <Spinner /> : <Fragment>
         <Link to='/posts' className='btn'>

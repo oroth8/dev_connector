@@ -147,7 +147,7 @@ const CreateProfile = ({ createProfile, history }) => {
                 </Fragment>}
 
 
-                <input type="submit" className="btn btn-primary my-1" />
+                <input type="submit" value="Submit" className="btn btn-primary my-1" />
                 <Link className="btn btn-purp my-1" to="/dashboard">Go Back</Link>
             </form>
         </Fragment>

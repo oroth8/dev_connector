@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux';
 import formatDate from '../../utils/formatDate';
-import { deleteEducation, deleteExperience } from '../../actions/profile'
+import { deleteEducation } from '../../actions/profile'
 
 
 const Edu = ({ education, deleteEducation }) => {

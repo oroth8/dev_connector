@@ -65,7 +65,7 @@ const AddEdu = ({ addEducation, history }) => {
                         value={description} onChange={e => onChange(e)}
                     ></textarea>
                 </div>
-                <input type="submit" className="btn btn-primary my-1" />
+                <input type="submit" value="Submit" className="btn btn-primary my-1" />
                 <Link className="btn my-1" to="/dashboard">Go Back</Link>
             </form>
 

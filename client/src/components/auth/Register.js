@@ -3,11 +3,11 @@ import { Link, Redirect } from "react-router-dom";
 
 import { connect } from "react-redux";
 import { setAlert } from "../../actions/alert";
-import {register} from '../../actions/auth'
+import { register } from '../../actions/auth'
 import PropTypes from 'prop-types';
 
 
-const Register = ({setAlert, register, isAuthenticated}) => {
+const Register = ({ setAlert, register, isAuthenticated }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -28,7 +28,7 @@ const Register = ({setAlert, register, isAuthenticated}) => {
     if (password !== password2) {
       setAlert("Passwords do not match!", "blue");
     } else {
-      register({name, email, password})
+      register({ name, email, password })
     }
   };
 
@@ -59,15 +59,15 @@ const Register = ({setAlert, register, isAuthenticated}) => {
   //   };
 
   // Redirect user after succesful register
-  if(isAuthenticated){
-    return <Redirect to='/dashboard'/>
+  if (isAuthenticated) {
+    return <Redirect to='/dashboard' />
   }
 
   return (
     <Fragment>
       <h1 className="large text-white">Sign Up</h1>
       <p className="lead text-white">
-        <i className="fas fa-user text-secnd"></i>Create Your Account
+        <i className="fas fa-user text-secnd"></i> Create Your Account
       </p>
       <form
         action="dashboard.html"
@@ -81,7 +81,7 @@ const Register = ({setAlert, register, isAuthenticated}) => {
             name="name"
             value={name}
             onChange={(e) => onChange(e)}
-            // required
+          // required
           />
         </div>
         <div className="form-group">
@@ -91,7 +91,7 @@ const Register = ({setAlert, register, isAuthenticated}) => {
             name="email"
             value={email}
             onChange={(e) => onChange(e)}
-            // required
+          // required
           />
           <small className="form-text">
             This site uses Gravatar. Please use an gravatar associated email.
@@ -104,7 +104,7 @@ const Register = ({setAlert, register, isAuthenticated}) => {
             name="password"
             value={password}
             onChange={(e) => onChange(e)}
-            // required
+          // required
           />
         </div>
         <div className="form-group">
@@ -114,7 +114,7 @@ const Register = ({setAlert, register, isAuthenticated}) => {
             name="password2"
             value={password2}
             onChange={(e) => onChange(e)}
-            // required
+          // required
           />
         </div>
         <input type="submit" value="Register" className="btn btn-primary" />

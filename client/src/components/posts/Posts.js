@@ -12,7 +12,7 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
     }, [getPosts])
     return loading ? <Spinner /> : (<Fragment>
         <h1 className='large text-white'>Posts</h1>
-        <p className='lead'>
+        <p className='lead text-white'>
             <i className='fas fa-user'></i> Welcome to the community!
         </p>
         <PostForm />
